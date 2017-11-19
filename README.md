@@ -1,7 +1,7 @@
 # BlastCannon App
 This app was created for the Microservices class @ UniMe.
 
-## Usefull Links
+## Useful Links
 ### Docker
 https://www.docker.com
 
