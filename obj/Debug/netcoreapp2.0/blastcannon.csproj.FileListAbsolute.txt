@@ -1,0 +1,10 @@
+/Users/x00n/Documents/DevOps/Appz/blastcannon/bin/Debug/netcoreapp2.0/blastcannon.deps.json
+/Users/x00n/Documents/DevOps/Appz/blastcannon/bin/Debug/netcoreapp2.0/blastcannon.runtimeconfig.json
+/Users/x00n/Documents/DevOps/Appz/blastcannon/bin/Debug/netcoreapp2.0/blastcannon.runtimeconfig.dev.json
+/Users/x00n/Documents/DevOps/Appz/blastcannon/bin/Debug/netcoreapp2.0/blastcannon.dll
+/Users/x00n/Documents/DevOps/Appz/blastcannon/bin/Debug/netcoreapp2.0/blastcannon.pdb
+/Users/x00n/Documents/DevOps/Appz/blastcannon/obj/Debug/netcoreapp2.0/blastcannon.csproj.CoreCompileInputs.cache
+/Users/x00n/Documents/DevOps/Appz/blastcannon/obj/Debug/netcoreapp2.0/blastcannon.AssemblyInfoInputs.cache
+/Users/x00n/Documents/DevOps/Appz/blastcannon/obj/Debug/netcoreapp2.0/blastcannon.AssemblyInfo.cs
+/Users/x00n/Documents/DevOps/Appz/blastcannon/obj/Debug/netcoreapp2.0/blastcannon.dll
+/Users/x00n/Documents/DevOps/Appz/blastcannon/obj/Debug/netcoreapp2.0/blastcannon.pdb
