@@ -17,10 +17,20 @@ namespace blastcannon.Controllers
             var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
             var localIpAddress = httpConnectionFeature?.LocalIpAddress;
             Console.WriteLine("Bang!");
-            return "Bang!" 
-            + localIpAddress 
-            + " @ " 
-            + DateTime.Now.ToString();
+            
+            return $"Bang!{localIpAddress} @ {DateTime.Now.ToString()}";
+        }
+        
+        // GET api/values
+        [HttpPost]
+        public string Post([FromBody] EnemyCoordinates coordinates)
+        {
+            var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
+            var localIpAddress = httpConnectionFeature?.LocalIpAddress;
+            
+            Console.WriteLine("Bang!");
+
+            return $"Bang -> {coordinates.X}/{coordinates.Y}! {localIpAddress} @  {DateTime.Now.ToString()}";
         }
     }
 }
