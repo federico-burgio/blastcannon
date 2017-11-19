@@ -10,27 +10,32 @@ namespace blastcannon.Controllers
     [Route("api/[controller]")]
     public class BlastController : Controller
     {
-        // GET api/values
+        // Test method for the blast cannon
         [HttpGet]
         public string Get()
         {
-            var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
-            var localIpAddress = httpConnectionFeature?.LocalIpAddress;
-            Console.WriteLine("Bang!");
-            
-            return $"Bang!{localIpAddress} @ {DateTime.Now.ToString()}";
+            return Blast(new EnemyCoordinates());
         }
         
-        // GET api/values
+        // Hit the specified point relative to the cannon center
         [HttpPost]
         public string Post([FromBody] EnemyCoordinates coordinates)
         {
+            return Blast(coordinates);
+        }
+
+        private string Blast(EnemyCoordinates coordinates)
+        {    
             var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
             var localIpAddress = httpConnectionFeature?.LocalIpAddress;
             
-            Console.WriteLine("Bang!");
+            bool hit = coordinates.X > 0.1 && coordinates.Y > 0.1;
+            string hitMessage = hit?"HIT":"MISS";
+            string message = $"Bang[{coordinates.X}/{coordinates.Y}] = {hitMessage} | {localIpAddress} @ {DateTime.Now.ToString()}";
 
-            return $"Bang -> {coordinates.X}/{coordinates.Y}! {localIpAddress} @  {DateTime.Now.ToString()}";
+            Console.WriteLine(message);
+
+            return message;
         }
     }
 }
