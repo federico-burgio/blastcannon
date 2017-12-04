@@ -12,7 +12,7 @@ docker build . --rm -f Dockerfile -t blastcannon:latest
 docker tag blastcannon blastcannon:latest & docker push blastcannon:latest
 
 ### Run on your local docker
-docker run -d -p 5000:5000 dev.baxenergy.com:5010/blastcannon:latest
+docker run -d -p 5000:5000 blastcannon:latest
 
 ## Run it with Minikube
 ### Create deployment
